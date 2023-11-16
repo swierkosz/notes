@@ -1,0 +1,1631 @@
+<profile version="1.0">
+    <option name="myName"
+            value="Test inspections"
+    />
+    <inspection_tool class="1ca21eb0-fadb-3d52-84e3-3af0d321c346"
+                     enabled="true"
+                     level="WEAK WARNING"
+                     enabled_by_default="true"
+    />
+    <inspection_tool class="SSBasedInspection"
+                     enabled="true"
+                     level="WARNING"
+                     enabled_by_default="true">
+        <replaceConfiguration name="AssertJ"
+                              text="assertTrue($EXPR$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isTrue();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ"
+                              text="assertFalse($EXPR$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isFalse();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ"
+                              text="assertNull($EXPR$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNull();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ"
+                              text="org.junit.jupiter.api.Assertions.assertNotNull($EXPR$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNotNull();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ"
+                              text="assertSame($EXPECTATION$, $EXPR$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isSameAs($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ"
+                              text="assertNotSame($EXPECTATION$, $EXPR$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNotSameAs($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ"
+                              text="assertEquals($EXPECTATION$, $EXPR$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isEqualTo($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ"
+                              text="assertNotEquals($EXPECTATION$, $EXPR$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNotEqualTo($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ"
+                              text="assertArrayEquals($EXPECTATION$, $EXPR$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isEqualTo($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ"
+                              text="assertIterableEquals($EXPECTATION$, $EXPR$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).containsExactlyElementsOf($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ"
+                              text="org.junit.jupiter.api.Assertions.assertThrows($EXPECTATION$, $EXPR$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="Throwable throwable = org.assertj.core.api.Assertions.catchThrowable($EXPR$);&#10;&#10;assertThat(throwable).isInstanceOf($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$.size()).isEqualTo($VALUE$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).hasSize($VALUE$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        nameOfExprType="Iterable"
+                        exprTypeWithinHierarchy="true"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$.size()).isEqualTo($VALUE$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).hasSize($VALUE$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        nameOfExprType="Map"
+                        exprTypeWithinHierarchy="true"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$.isEmpty()).isTrue();"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).isEmpty();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        nameOfExprType="Iterable"
+                        exprTypeWithinHierarchy="true"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$.isEmpty()).isTrue();"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).isEmpty();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        nameOfExprType="Map"
+                        exprTypeWithinHierarchy="true"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$).hasSize(0);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).isEmpty();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        nameOfExprType="Iterable"
+                        exprTypeWithinHierarchy="true"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$).hasSize(0);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).isEmpty();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        nameOfExprType="Map"
+                        exprTypeWithinHierarchy="true"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$.isEmpty()).isFalse();"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).isNotEmpty();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        nameOfExprType="Iterable"
+                        exprTypeWithinHierarchy="true"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$.isEmpty()).isFalse();"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).isNotEmpty();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        nameOfExprType="Map"
+                        exprTypeWithinHierarchy="true"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$.contains($VALUE$)).isTrue();"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).contains($VALUE$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        nameOfExprType="Iterable"
+                        exprTypeWithinHierarchy="true"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$.contains($VALUE$)).isFalse();"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).doesNotContain($VALUE$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        nameOfExprType="Iterable"
+                        exprTypeWithinHierarchy="true"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$.contains($VALUE$)).isTrue();"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).contains($VALUE$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        nameOfExprType="CharSequence"
+                        exprTypeWithinHierarchy="true"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$.contains($VALUE$)).isFalse();"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).doesNotContain($VALUE$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        nameOfExprType="CharSequence"
+                        exprTypeWithinHierarchy="true"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$.startsWith($VALUE$)).isTrue();"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).startsWith($VALUE$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        nameOfExprType="CharSequence"
+                        exprTypeWithinHierarchy="true"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$.startsWith($VALUE$)).isFalse();"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).doesNotStartWith($VALUE$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        nameOfExprType="CharSequence"
+                        exprTypeWithinHierarchy="true"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$.endsWith($VALUE$)).isTrue();"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).endsWith($VALUE$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        nameOfExprType="CharSequence"
+                        exprTypeWithinHierarchy="true"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$.endsWith($VALUE$)).isFalse();"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).doesNotEndWith($VALUE$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        nameOfExprType="CharSequence"
+                        exprTypeWithinHierarchy="true"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$).isEqualTo(null);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).isNull();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="AssertJ misuse"
+                              text="assertThat($OBJ$).isNotEqualTo(null);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="assertThat($OBJ$).isNotNull();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="OBJ"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, startsWith($EXPECTATION$));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).startsWith($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, not(startsWith($EXPECTATION$)));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).doesNotStartWith($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, endsWith($EXPECTATION$));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).endsWith($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, not(endsWith($EXPECTATION$)));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).doesNotEndWith($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, containsString($EXPECTATION$));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).contains($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, not(containsString($EXPECTATION$)));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).doesNotContain($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, equalTo($EXPECTATION$));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isEqualTo($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, not(equalTo($EXPECTATION$)));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNotEqualTo($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, is(equalTo($EXPECTATION$)));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isEqualTo($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, is(not(equalTo($EXPECTATION$))));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNotEqualTo($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, nullValue());"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNull();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, not(nullValue()));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNotNull();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, is(nullValue()));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNull();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, is(not(nullValue())));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNotNull();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, notNullValue());"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNotNull();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, is(notNullValue()));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNotNull();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, sameInstance($EXPECTATION$));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isSameAs($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, not(sameInstance($EXPECTATION$)));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNotSameAs($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, is(sameInstance($EXPECTATION$)));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isSameAs($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, is(not(sameInstance($EXPECTATION$))));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNotSameAs($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, theInstance($EXPECTATION$));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isSameAs($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, not(theInstance($EXPECTATION$)));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNotSameAs($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, is(theInstance($EXPECTATION$)));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isSameAs($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, is(not(theInstance($EXPECTATION$))));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNotSameAs($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, hasSize($EXPECTATION$));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).hasSize($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, contains($EXPECTATION$));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).contains($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, not(contains($EXPECTATION$)));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).doesNotContain($EXPECTATION$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPECTATION"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, empty());"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isEmpty();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, not(empty()));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNotEmpty();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, emptyIterable());"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isEmpty();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Hamcrest"
+                              text="assertThat($EXPR$, not(emptyIterable()));"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.assertj.core.api.Assertions.assertThat($EXPR$).isNotEmpty();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="JUnit5 - test method signatures"
+                              uuid="1ca21eb0-fadb-3d52-84e3-3af0d321c346"
+                              text="@org.junit.jupiter.api.Test&#10;public void $testMethod$ () throws $EX$;&#10;"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              replacement="@org.junit.jupiter.api.Test&#10;void $testMethod$ () throws $EX$;&#10;">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="testMethod"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EX"
+                        minCount="0"
+                        maxCount="2147483647"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Mockito - BDD"
+                              uuid="a9f24b59-bf77-3e78-922b-6cfc4664f239"
+                              text="org.mockito.Mockito.when($EXPR$).thenReturn($VALUE$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.mockito.BDDMockito.given($EXPR$)&#10;        .willReturn($VALUE$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Mockito - BDD"
+                              uuid="a9f24b59-bf77-3e78-922b-6cfc4664f239"
+                              text="org.mockito.Mockito.when($EXPR$).thenThrow($VALUE$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.mockito.BDDMockito.given($EXPR$)&#10;        .willThrow($VALUE$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Mockito - BDD"
+                              uuid="a9f24b59-bf77-3e78-922b-6cfc4664f239"
+                              text="org.mockito.Mockito.when($EXPR$).thenAnswer($VALUE$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.mockito.BDDMockito.given($EXPR$)&#10;        .willAnswer($VALUE$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Mockito - BDD"
+                              uuid="a9f24b59-bf77-3e78-922b-6cfc4664f239"
+                              text="org.mockito.Mockito.when($EXPR$).then($VALUE$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.mockito.BDDMockito.given($EXPR$)&#10;        .will($VALUE$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Mockito - BDD"
+                              uuid="a9f24b59-bf77-3e78-922b-6cfc4664f239"
+                              text="org.mockito.Mockito.when($EXPR$).thenCallRealMethod();"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.mockito.BDDMockito.given($EXPR$)&#10;        .willCallRealMethod();">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Mockito - BDD"
+                              uuid="a9f24b59-bf77-3e78-922b-6cfc4664f239"
+                              text="org.mockito.Mockito.doReturn($VALUE$).when($EXPR$)"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.mockito.BDDMockito.willReturn($VALUE$)&#10;        .given($EXPR$)">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Mockito - BDD"
+                              uuid="a9f24b59-bf77-3e78-922b-6cfc4664f239"
+                              text="org.mockito.Mockito.doThrow($VALUE$).when($EXPR$)"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.mockito.BDDMockito.willThrow($VALUE$)&#10;        .given($EXPR$)">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Mockito - BDD"
+                              uuid="a9f24b59-bf77-3e78-922b-6cfc4664f239"
+                              text="org.mockito.Mockito.doAnswer($VALUE$).when($EXPR$)"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.mockito.BDDMockito.willAnswer($VALUE$)&#10;        .given($EXPR$)">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+            <constraint name="VALUE"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Mockito - BDD"
+                              uuid="a9f24b59-bf77-3e78-922b-6cfc4664f239"
+                              text="org.mockito.Mockito.doNothing().when($EXPR$)"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.mockito.BDDMockito.willDoNothing()&#10;        .given($EXPR$)">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Mockito - BDD"
+                              uuid="a9f24b59-bf77-3e78-922b-6cfc4664f239"
+                              text="org.mockito.Mockito.doCallRealMethod().when($EXPR$)"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="false"
+                              useStaticImport="true"
+                              replacement="org.mockito.BDDMockito.willCallRealMethod()&#10;        .given($EXPR$)">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Mockito - redundant code"
+                              text="org.mockito.Mockito.verify($EXPR$, times(1))"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.mockito.Mockito.verify($EXPR$)">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Mockito - redundant code"
+                              text="org.mockito.Mockito.verify($EXPR$, org.mockito.Mockito.times(0))"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.mockito.Mockito.verify($EXPR$, org.mockito.Mockito.never())">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+        <replaceConfiguration name="Mockito - redundant code"
+                              text="org.mockito.Mockito.verifyZeroInteractions($EXPR$);"
+                              recursive="false"
+                              caseInsensitive="false"
+                              type="JAVA"
+                              pattern_context="default"
+                              reformatAccordingToStyle="true"
+                              shortenFQN="true"
+                              useStaticImport="true"
+                              replacement="org.mockito.Mockito.verifyNoInteractions($EXPR$);">
+            <constraint name="__context__"
+                        within=""
+                        contains=""
+            />
+            <constraint name="EXPR"
+                        within=""
+                        contains=""
+            />
+        </replaceConfiguration>
+    </inspection_tool>
+</profile>

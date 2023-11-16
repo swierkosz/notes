@@ -1,0 +1,8 @@
+@org.junit.jupiter.api.Test
+void should$END$() {
+    // Given
+
+    // When
+
+    // Then
+}
